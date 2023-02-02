@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #EEF9BF;
+  
+}
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+  
+  .title h1 {
+    text-align: center;
+    font-family: roboto, sans-serif;
+    font-weight: 700;
+    font-size: 5.6rem;
+    line-height: 65.63px;
+    color: #75B79E;
+  }
+  
+  main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 3.4rem;
+    max-width: 86rem;
+    margin-top: 4.7rem;
+  
+  }
+  
+   .card {
+    width: 11.7rem;
+    height: 14.6rem;
+    position: relative;
+ 
+  }
+  
+  .face{
+    width: 100%;
+    height: 100%;
+    background-color: #A7E9AF;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: all .5s;
+    transform-style: preserve-3d;
+  }
+  
+ 
+  
+  .back-card img {
+    width: 100px;
+  }
+  
+ 
+  .front-card img {
+    width: 100px;
+    height: 100px;
+  }
+
+
+  .back-card {
+    transform: rotateY(180deg);
+  }
+
+  .spin-back-card {
+    transform: rotateY(0deg);
+  }
+
+  .spin-front-card {
+    transform: rotateY(-180deg);
+  }
+  
+  .timer{
+ 
+   position: fixed;
+   top: 1.6rem;
+   right: 2rem;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: -0.004em;
+
+    color: #86BD8D
+    
+
+  }
+
+  
+  @media (max-width: 430px) {
+    .title h1 {
+      font-size: 3.6rem;
+      line-height: 4.219rem;
+    }
+
+    .timer{
+        top: 0.2rem;
+
+    }
+  
+  }
+  
+  @media (max-width: 330px) {
+    .title h1 {
+      font-size: 3.6rem;
+      line-height: 4.219rem;
+    }
+  
+    .main {
+      flex-direction: column;
+      align-items: center;
+    }
+     .timer{
+        top: 0.2rem;
+    
+     }
+
+  }
